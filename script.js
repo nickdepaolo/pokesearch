@@ -5,6 +5,8 @@ const baseSearchURL = "https://pokeapi.co/api/v2/pokemon/";
 // Main Search Look Up Section & Set to Page // Line 7 To Line 85
 // 
 function dig(e){
+
+    
     
     url = `${baseSearchURL}${e}`
     
@@ -18,8 +20,10 @@ function dig(e){
             setdata(json);
         })
 
-        .catch(() => {
-        })           
+        .catch(() => {"Not a Pokemon"
+        }) 
+        
+    
 }
         
 
@@ -30,7 +34,7 @@ function setdata(e){
     setType(e)
     setHeight(e)
     setWeight(e)
-    setTimeout(function(){setSprite(e)}, 1300)
+
 }
 
 
@@ -44,6 +48,7 @@ function setName(e){
 function setSpriteOpen(e){
     if (e.name) {
         document.querySelector('#imageDefaultSprite').src = `assets/CloudyScarceBoa-size_restricted.gif`;
+        setTimeout(function(){setSprite(e)}, 1300)
     }
 }
 
@@ -118,16 +123,22 @@ sb.onclick = () =>{
 // 
 // 
 
-const spriteFillUpper = document.querySelector("#fadeUS2")
+const fade2 = document.querySelector('#fadeUS2');
 
-const spritefillNum = document.getElementsByTagName('p')[0]
 
-spriteFillUpper.onclick = () =>{
-   console.log(spritefillNum.innerHTML);
-//    dig(spritefillNum.innerHTML);
+let upperNum = ""
+
+function gogo(e){
+    upperNum = e
 }
 
-
+fade2.onclick = () =>{
+    window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+    });
+    dig(upperNum)
+}
 // 
 // 
 
@@ -148,7 +159,7 @@ function dig2(e){
         })
 
         .catch(() => {
-            document.querySelector('#dataName').innerHTML = `Not a Pokemon`})      
+            })      
 }
 
 
@@ -169,7 +180,8 @@ function setFade2(){
 
 
 function incSec(x, y){
-    dig2(1 + ((x * 9) + (x * (y % 7))));
+    dig2(1 + ((x * 9) + (x * (y % 7))))
+    gogo(1 + ((x * 9) + (x * (y % 7))))
 }
 
 
@@ -221,7 +233,7 @@ function dig3(e){
         })
 
         .catch(() => {
-            document.querySelector('#dataName').innerHTML = `Not a Pokemon`})   
+            })   
 }
 
 
@@ -245,6 +257,7 @@ function logSecBar(){
 
 function incSecBar(x, y){
     dig3(8 + ((x * 9) + (x * (y % 7))));
+    gogo2(8 + ((x * 9) + (x * (y % 7))))
 }
 
 
@@ -253,3 +266,21 @@ function lowerDex(e){
 }
 
 logSecBar()
+
+const fade3 = document.querySelector('#barImg1');
+
+
+let lowerNum = ""
+
+function gogo2(e){
+    lowerNum = e
+}
+
+fade3.onclick = (e) =>{
+    window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+    });
+    dig(lowerNum)
+}
+
