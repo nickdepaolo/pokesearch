@@ -1,0 +1,502 @@
+body {
+    margin: 0em;
+    size: cover;
+    background: 
+    linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0) 50%),
+    linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0) 25%),
+    linear-gradient(to right,rgba(255,255,255,.8), rgba(0,0,0,0) 25%),
+    linear-gradient(to left,rgba(255,255,255,.8), rgba(0,0,0,0) 25%),
+    url("./assets/pokemon-go-sept-revenue.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+.rightBarContainer{
+    overflow: hidden;
+    background-image:url(./assets/pins.gif);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border-radius: 3em;
+    border-width: .15em;
+    /* border-style: solid; */
+    border-color: rgba(31, 0, 0, 0.9);
+    padding: .5em;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+    filter:opacity(.013);
+    z-index: -0;
+    box-shadow: 2px 10px 5px rgba(0,0,0,.6);
+    background-color: transparent;
+}
+
+
+body::-webkit-scrollbar {
+    background-color: white;
+    width: 1.5em;
+}
+
+
+body::-webkit-scrollbar-thumb{
+    background-color: red;
+    background-image: 
+    linear-gradient( rgba(0,0,0,.8) 1%, rgba(150, 0, 0, 0.9) 50%,rgba(0,0,0,.8) 100% 100%);;
+    border-width: 1px black;
+    border-style: solid;
+    border-radius: 12px;
+}
+
+
+body::-webkit-scrollbar-track{
+    background-image: 
+    linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,.6) 50%, rgba(0,0,0,1)90% 100%);
+}
+
+
+h1{
+    position: relative;
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+p{
+    text-align: center;
+}
+
+li{
+    text-align: left;
+    font-size: 2em;
+    padding-left: 0em;
+    list-style: none;
+    text-shadow: 1px 1px black;
+}
+
+
+ul{
+    justify-content: center;
+}
+
+
+#img1{
+    
+    max-width: auto;
+    max-height: 12em;
+    padding: 1em;
+    /* background-color: blue; */
+    z-index: 4;
+}
+
+
+#img2{
+    max-width: 10em;
+    height: auto;
+    padding-top: 0em;
+    /* background-color: blue; */
+    align-content: center;
+    z-index: 4;
+}
+
+
+#flexTop{
+    right: -1%;
+    top: 5%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0%;
+    z-index: 4;
+
+}
+
+#open{
+    max-width: 65%;
+    position: relative;
+    z-index: 4;
+    /* left: 35%; */
+    top: 20%;
+    mix-blend-mode: multiply;
+    
+}
+
+
+#mixBlend{
+    mix-blend-mode: multiply;
+}
+
+#bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    justify-content: space-around;
+    background: linear-gradient(rgba(255,255,255,1), rgba(0, 0, 0, 0) ),
+    linear-gradient(to right, red , white);
+    min-width: 50%;
+    border-radius: 5em;
+    box-shadow: 10px 5px 5px;
+    border-style: solid;
+    border-width: .35em;
+    border-color:  #0889c5;
+    z-index: 4;
+    background-color: ;
+}
+
+#spriteUpper{
+    position: relative;
+    left: 23%;
+    max-width: auto;
+    height: auto;
+    z-index: 5;
+    /* right: -1%; */
+    top: 270%;
+    align-content: center;
+    opacity: .6;
+}
+
+
+#spriteUpper :hover{
+    max-width: 180%;
+}
+
+
+#fadeUS{
+    filter: invert();
+    width: 6em;
+    height: auto;
+    mix-blend-mode: multiply;
+    position: relative;
+    top: 343%;
+    left: 4.5%;
+    border-radius: 50%;
+    z-index: 2;
+    border-width: .20em;
+    border-style: solid;
+    border-color: white;
+}
+
+
+#fadeUS2{
+    filter: invert();
+    width: 14em;
+    height: 8em;
+    mix-blend-mode: multiply;
+    position: relative;
+    top: 260%;
+    left: -24%;
+    border-radius: 50%;
+    z-index: 6;
+    border-width: .0em;
+    border-style: solid;
+    transform: rotate(180deg);
+
+}
+
+
+#flexTick{
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    border-radius: 15em
+}
+
+
+#upperDex{
+    position: relative;
+    right:17%;
+    top: -1%;
+    font-size: 2em;
+    color: #0889C5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0.5px 2px  rgba(251, 253, 121, 0.507);
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+#barPadding{
+    padding: 1%;
+}
+
+
+
+#ui{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: rgba(255, 251, 251, 0.6);
+    text-align: center;
+    padding-top: 2em;
+}
+
+
+#input{
+    height: 40em;
+    width: 26%;
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.8) 50%, rgba(0,0,0,0)90% 100%);
+    border-radius: 0em;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    z-index: 2;
+
+}
+
+
+#input:hover{
+
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.92) 50%, rgba(0,0,0,0)90% 100%); 
+}
+
+
+#searchField{
+    color: rgba(255, 251, 251, 0.6);
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 10px 5px rgba(0,0,0,.5);
+    border-radius: 1em;
+    border-style:solid;
+    cursor: pointer;
+    font-size: 1.4em;
+    width: 80%;
+    text-align: center;
+    text-transform: lowercase;
+    transition: .5s ease-in-out;
+    outline: none;
+    z-index: 2;
+}
+
+
+#searchField:hover{
+    
+    opacity: 50%;
+    border-color:rgba(255, 50, 50, 0.5);
+    color: rgba(255, 251, 251, 1);
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 1px 10px 5px rgba(31, 0, 0, 0.9);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+#submitButton{
+    color: rgba(255, 251, 251, 0.6);
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 1px 10px 5px rgba(0,0,0,.5);
+    border-radius: 1em;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 1.4em;
+    width: 100%;
+    transition: .5s ease-in-out; 
+    position: center;
+    outline: none;
+}
+
+
+#submitButton:hover{
+    opacity: 50%;
+    border-color:rgba(255, 50, 50, 0.5);
+    color: rgba(255, 251, 251, 1);
+    background-color: rgba(0,0,0,1);
+    box-shadow: 1px 10px 5px rgba(31, 0, 0, 0.9);
+    transition: .4s cubic-bezier(0.175, 0.82, 0.165, 2);
+    
+}
+
+
+#dataReturn{
+    height: 40em;
+    width: 34%;
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.8) 50%, rgba(0,0,0,0)90% 100%);
+    border-radius: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    
+}
+
+
+#dataName{
+    padding-top: .8em;
+    text-transform: capitalize;
+    transition: .5s ease-in-out;
+    text-shadow: 2px 2px black; 
+}
+
+#stop{
+    position: absolute;
+}
+
+#dataName:hover{
+    font-size: 285%;
+    transition: .5s ease-in-out;
+    color: rgba(255, 254, 199, 0.7);
+    
+}
+
+
+#dex{
+    transition: .5s ease-in-out;
+}
+
+
+#setType{
+    transition: .5s ease-in-out;
+    text-transform: capitalize;
+}
+
+
+#setType:hover{
+    font-size: 250%;
+    transition: all .4s ease-out;
+    color: rgba(255, 254, 199, 0.7);
+    
+}
+
+
+#height{
+    transition: .5s ease-in-out;
+}
+
+
+#height:hover{
+    font-size: 250%;
+    transition: all .4s ease-out;
+    color: rgba(255, 254, 199, 0.7);
+}
+
+
+#weight{
+    transition: .5s ease-in-out;
+}
+
+
+#weight:hover{
+    font-size: 250%;
+    transition: all .4s ease-out;
+    color: rgba(255, 254, 199, 0.7);
+}
+
+
+#dex:hover{
+    font-size: 250%;
+    transition: all .4s ease-out;  
+    color: rgba(255, 254, 199, 0.7);
+}
+
+
+#dataReturn:Hover{
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.92) 50%, rgba(0,0,0,0)90% 100%);
+    
+}
+
+
+#sprite{
+    height: 40em;
+    width: 35%;
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.8) 50%, rgba(0,0,0,0)90% 100%);
+    border-radius: 0em;
+    z-index: 2;
+    
+}
+
+
+#sprite:hover{
+    background: linear-gradient(rgba(0,0,0,0) 1%, rgba(0,0,0,.92) 50%, rgba(0,0,0,0)90% 100%);
+}
+
+
+#imageDefaultSprite{
+    padding-top: 0%;
+    transition: all .4s ease-out;
+    border-radius: 50%;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top: 8em;
+}
+
+
+#imageDefaultSprite:hover{
+    width: 65%;
+    transition: all .4s ease-out;
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-image:url(./assets/warp.gif);
+    position: fixed;
+    bottom: 0;
+    width: 8%;
+    border-radius: 50%;
+    border-width: .15em;
+    border-color: rgba(31, 0, 0, 0.9);
+    padding: .5em;
+    left: .5%;
+    bottom: -5%;
+    filter:grayscale(.5);
+    z-index: 3;
+    box-shadow: 2px 10px 5px rgba(0,0,0,.6);
+
+}
+
+
+.barImg{
+    border-radius: 3%;
+    width:97.5%;
+}
+
+
+.dexBar{
+    overflow: hidden;
+    
+    /* background-color:#0889c5; */
+    position: relative;
+    width: 7.7%;
+    height: 15%;
+    /* border-style: solid; */
+    border-radius: 20%;
+    border-width: .25em;
+    border-color: rgba(31, 0, 0, 0.9);
+    padding: 0%;
+    left: 7.15%;
+    bottom: -5%;
+    filter:grayscale(.5);
+    /* mix-blend-mode: multiply; */
+    text-align: right;
+}
+
+#dexBarTick{
+    background-image:url(./assets/pins.gif);
+    position: relative;
+    font-size: 2em;
+    padding-right: .5%;
+    left: 7.5%;
+    border-radius: 10px;
+    height: 44%;
+    width: 4%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(31, 0, 0, 0.9);
+    box-shadow: inset 5px 10px 5px rgba(0,0,0,.5);
+    color: #0889C5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 1.5px  rgb(251, 253, 121);
+    letter-spacing: -6px;
+    text-align: right;
+    z-index: 2;
+}
+
+
