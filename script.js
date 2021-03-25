@@ -20,7 +20,7 @@ function dig(e){
             setdata(json);
         })
 
-        .catch(() => {"Not a Pokemon"
+        .catch(() => {
         }) 
         
     
@@ -47,9 +47,15 @@ function setName(e){
 
 function setSpriteOpen(e){
     if (e.name) {
-        document.querySelector('#imageDefaultSprite').src = `assets/CloudyScarceBoa-size_restricted.gif`;
-        setTimeout(function(){setSprite(e)}, 1300)
+        document.querySelector('#release').src = `assets/CloudyScarceBoa-size_restricted.gif`;
+        setTimeout(function(){setSprite(e)}, 1290)
+        setTimeout(function(){clearRelease()}, 1290)
     }
+}
+
+
+function clearRelease() {
+    document.querySelector('#release').src = `_blank`;
 }
 
 
@@ -115,7 +121,12 @@ sb.onclick = () =>{
     dig(`${ques.value}`);
 }
 
-
+// ques.keydown = () =>{
+//     ("#searchField").keypress(function(event) {
+//             if (event.keycode === 13) {
+//                 $("#submitButton").click()}
+//     })
+// }
 // 
 // 
 
@@ -124,7 +135,6 @@ sb.onclick = () =>{
 // 
 
 const fade2 = document.querySelector('#fadeUS2');
-
 
 let upperNum = ""
 
