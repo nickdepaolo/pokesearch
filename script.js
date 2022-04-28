@@ -49,7 +49,7 @@ function setSpriteOpen(e){
     if (e.name) {
         document.querySelector('#release').src = `assets/CloudyScarceBoa-size_restricted.gif`;
         setTimeout(function(){setSprite(e)}, 1290)
-        setTimeout(function(){clearRelease()}, 1290)
+        setTimeout(function(){clearRelease()}, 1200)
     }
 }
 
